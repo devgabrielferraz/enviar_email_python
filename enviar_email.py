@@ -23,3 +23,12 @@ Exemplo do corpo do email:
   <p>Atenciosamente,<br>Equipe de Vendas</p>
 
 """
+
+# Se quiser colocar um anexo no e-mail
+anexo = "exemplo: C://Users/Documentos/arquivo.xlsx"
+
+email.Attachments.Add(anexo)
+
+#Enviar email
+email.Send()
+print("E-mail Enviado com Sucesso!")
